@@ -1,0 +1,17 @@
+import random as r
+a=r.randint(1,100)
+c=input("Enter your name: ")
+print("Welcome to the GUESSING GAME {}!".format(c))
+def num_guess():
+    t=0
+    while True:
+        b=int(input("Enter your guessed number: "))
+        t+=1
+        if (b==a):
+            print("Congratulations!!!, you guessed it right in {} times!".format(t))
+            break
+        elif(b>a):
+            print("Too big guess!")
+        else:
+            print("Too small guess!")
+num_guess()
